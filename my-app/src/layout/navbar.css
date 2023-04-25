@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.burgerMenu {
+    height: 100%;
+    width: 2em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.burger-bar {
+    width: 2em;
+    height: 10%;
+    background-color: black;
+}
+
+.menu {
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+}
