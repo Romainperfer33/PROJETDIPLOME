@@ -9,7 +9,6 @@ nav {
 
 .burger-menu {
     height: 60%;
-    width: 4em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -20,15 +19,16 @@ nav {
 .burger-bar {
     width: 2em;
     height: 10%;
-    background-color: black;
+    background-color: blue;
 }
 
 .menu {
-    width: 50%;
+    width: 20%;
     height: 100vh;
     background-color: black;
     position: absolute;
     top: 0;
+    right: 0;
     z-index: -1;
 }
 
@@ -39,6 +39,20 @@ nav {
 
 .visible {
     display: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navlink {
+    padding: 1.5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
 }
 
 /* ----- animations--------- */
@@ -54,7 +68,7 @@ nav {
 }
 
 .burger-bar.clicked:nth-child(3){
-    transform: rotate(135deg) translate(-0.5em, 1em);
+    transform: rotate(135deg) translate(0em, 0.5em);
     transition: ease-out 0.5s;
 }
 

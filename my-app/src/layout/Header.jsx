@@ -32,7 +32,18 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <div className={menu_class}></div>
+            <div className={menu_class}>
+                <nav className="navbar">
+                    <ul className="navlinks">
+                        <li className="navlink">
+                           <a href="/" className="link">STAGE</a>
+                        </li>
+                        <li className="navlink">
+                            <a href="/" className="link">LOGIN</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     )
 }
