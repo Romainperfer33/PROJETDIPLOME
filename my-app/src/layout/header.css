@@ -5,7 +5,14 @@
 .logo {
     font-size: x-large;
     font-weight: bolder;
-    color: black;
+    color: white;
+}
+
+.centered span{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    
 }
 
 .centered {
@@ -15,6 +22,21 @@
     align-items: center;
     font-family: "Poppins-Bold",Arial, Helvetica, sans-serif;
     font-size: 10rem;
+    color: white;
+    position: relative; 
+  }
+  .centered h1::first-letter{
+    letter-spacing: 5rem;
+  }
+.bgcolor{
+    background: rgb(22,22,22);
+    background: linear-gradient(142deg, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 100%);
+    }
+  .img {
+    background-image: url(../../public/assets/img/DSC_0291.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
 /* ---------------- Navbar and burger menu ------------------ */
@@ -39,6 +61,8 @@ nav {
     width: 2em;
     height: 10%;
     background-color: white;
+    z-index:1000;
+    position: relative;
 }
 
 .menu {
@@ -48,7 +72,7 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 /* ------------- sliding menu ------------------ */

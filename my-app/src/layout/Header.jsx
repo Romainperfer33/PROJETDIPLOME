@@ -22,11 +22,12 @@ const Header = () => {
     }
 
     return(
-        <div style={{width: '100%', height: '100vh'}}>
+        <div className="bgcolor">
+        <div className="img" style={{width: '100%', height: '100vh'}}>
             <nav>
                 <div className="logo">TFA</div>
                 <div class="centered">
-                    <h1>TFA </h1>
+                    <h1>T<span>F</span>A </h1>
                 </div>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class} ></div>
@@ -47,6 +48,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
+        </div>
         </div>
     )
 }
