@@ -1,6 +1,5 @@
 import Header from "./layout/Header";
 import './App.css'
-import './layout/navbar.css'
 
 function App() {
   return (

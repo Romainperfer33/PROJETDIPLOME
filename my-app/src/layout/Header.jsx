@@ -1,34 +1,40 @@
-import { useState } from "react";
+import React, {useState} from "react";
+import './navbar.css'
 
+const Navbar = () => {
 
-const NavBar = () => {
+    // to change burger classes
+    const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
+    const [menu_class, setMenuClass] = useState("menu hidden")
+    const [isMenuClicked, setIsMenuClicked] = useState(false)
 
-    const [burger_class, setBurgerClass]= useState("burger-bar unclicked")
-    const [menu_class, setMenuClass]= useState ("menu hidden")
-    const [isMenuClicked, setIsMenuClicked]= useState (false)
-
-    const handleClick = () => {
-        if (!isMenuClicked) {
-            setBurgerClass ("burger-bar clicked")
-            setMenuClass ("menu visible")
+    // toggle burger menu change
+    const updateMenu = () => {
+        if(!isMenuClicked) {
+            setBurgerClass("burger-bar clicked")
+            setMenuClass("menu visible")
         }
         else {
-            setBurgerClass ("burger-bar unclicked")
-            setMenuClass ("menu hidden")
+            setBurgerClass("burger-bar unclicked")
+            setMenuClass("menu hidden")
         }
         setIsMenuClicked(!isMenuClicked)
     }
-return (
- <header>
-    <div className="logo">TFA</div>
-    <div className="burgerMenu" onClick={handleClick}>
-        <div className= {burger_class}></div>
-        <div className= {burger_class}></div>
-        <div className= {burger_class}></div>
-    </div>
- </header>
-)
 
+    return(
+        <div style={{width: '100%', height: '100vh'}}>
+            <nav>
+                <div className="logo">TFA</div>
+                <div className="burger-menu" onClick={updateMenu}>
+                    <div className={burger_class} ></div>
+                    <div className={burger_class} ></div>
+                    <div className={burger_class} ></div>
+                </div>
+            </nav>
+
+            <div className={menu_class}></div>
+        </div>
+    )
 }
 
-export default NavBar
+export default Navbar
