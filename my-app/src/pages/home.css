@@ -1,0 +1,29 @@
+.container {
+  background-color:rgb(105, 105, 105);
+}
+
+h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+  padding-top: 2rem;
+}
+
+p {
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  border: solide;
+}
+
+.btn:hover {
+  color: white;
+  transition: ease-in-out 0.5s;
+}

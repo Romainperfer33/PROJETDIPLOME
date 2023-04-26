@@ -35,7 +35,6 @@ const Header = () => {
                     <div className={burger_class} ></div>
                 </div>
             </nav>
-
             <div className={menu_class}>
                 <nav className="navbar">
                     <ul className="navlinks">
@@ -48,7 +47,8 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
-        </div>
+                <h2>TECHNO FOR ALL</h2>
+            </div>
         </div>
     )
 }
