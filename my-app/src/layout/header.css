@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../../public/assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+.logo {
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+}
+
+.centered {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins-Bold",Arial, Helvetica, sans-serif;
+    font-size: 10rem;
+  }
+
 /* ---------------- Navbar and burger menu ------------------ */
 nav {
     width: 90%;
@@ -19,7 +38,7 @@ nav {
 .burger-bar {
     width: 2em;
     height: 10%;
-    background-color: blue;
+    background-color: white;
 }
 
 .menu {
@@ -50,6 +69,11 @@ nav {
     padding: 1.5rem;
 }
 
+.navlinks {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 .link {
     text-decoration: none;
     color: white;
@@ -58,7 +82,7 @@ nav {
 /* ----- animations--------- */
 /* clicked */
 .burger-bar.clicked:nth-child(1){
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transform: rotate(45deg) translate(1.45em, 1.75em);
     transition: ease-out 0.5s;
 }
 

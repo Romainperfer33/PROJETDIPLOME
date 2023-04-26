@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import './navbar.css'
+import './header.css'
 
-const Navbar = () => {
+const Header = () => {
 
     // to change burger classes
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
@@ -25,6 +25,9 @@ const Navbar = () => {
         <div style={{width: '100%', height: '100vh'}}>
             <nav>
                 <div className="logo">TFA</div>
+                <div class="centered">
+                    <h1>TFA </h1>
+                </div>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class} ></div>
                     <div className={burger_class} ></div>
@@ -48,4 +51,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Header

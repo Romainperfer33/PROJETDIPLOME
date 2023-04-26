@@ -4,8 +4,14 @@
     src: url(../public/assets/fonts/Poppins/Poppins-ExtraLight.ttf);
 }
 
-* {
+
+body {
     box-sizing: border-box;
     margin: 0;
     font-family: "Poppins-ExtraLight", Arial, Helvetica, sans-serif;
+    
 }
+
+
+
+
