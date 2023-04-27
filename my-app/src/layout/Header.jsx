@@ -23,7 +23,7 @@ const Header = () => {
 
     return(
         <div className="bgcolor">
-        <div className="img" style={{width: '100%', height: '100vh'}}>
+        <div className="img" style={{width: '100%', height: '75vh'}}>
             <nav>
                 <div className="logo">TFA</div>
                 <div class="centered">
@@ -47,7 +47,10 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
+            </div>
+            <div>
                 <h2>TECHNO FOR ALL</h2>
+                <p className="smcontainer"> by Romain Mesama</p>
             </div>
         </div>
     )

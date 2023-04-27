@@ -79,7 +79,15 @@ nav {
     right: 0;
     z-index: 0;
 }
+h2 {
+    font-size: 3em;
+}
 
+.smcontainer {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 /* ------------- sliding menu ------------------ */
 .hidden {
     display: none;
