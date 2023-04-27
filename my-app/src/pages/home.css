@@ -31,6 +31,16 @@ p {
 /* -------------------------------------div trans---------------------------------- */
  
 .divtrans {
-  height: 50vh;
-  background-color: transparent;
+  height: 20vh;
+  background-color: grey;
+  opacity: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
 }
