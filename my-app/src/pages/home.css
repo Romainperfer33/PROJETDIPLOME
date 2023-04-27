@@ -21,6 +21,7 @@ p {
   text-decoration: none;
   color: black;
   border: solide;
+  padding: 1rem;
 }
 
 .btn:hover {
@@ -31,16 +32,10 @@ p {
 /* -------------------------------------div trans---------------------------------- */
  
 .divtrans {
-  height: 20vh;
-  background-color: grey;
+  height: 30vh;
   opacity: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.icon {
-  height: 3rem;
-  width: 3rem;
-}

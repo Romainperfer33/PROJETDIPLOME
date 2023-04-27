@@ -1,0 +1,29 @@
+footer {
+    height: 30vh;
+    background-color: grey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+a svg:hover #facebook,
+a svg:hover #instagram,
+a svg:hover #soundcloud,
+a svg:hover #youtube { 
+  fill: #111;
+}
+
+a svg:hover #facebook,
+a svg:hover #instagram,
+a svg:hover #soundcloud,
+a svg:hover #youtube { 
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
