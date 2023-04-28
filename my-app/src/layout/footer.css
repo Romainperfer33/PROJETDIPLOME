@@ -1,11 +1,12 @@
 .banniere {
-    height: 30vh;
-    background-color: grey;
+    background: rgb(22,22,22);
+    background: linear-gradient(142deg, rgba(22,22,22,1) 0%, rgba(205,200,200,1) 25%);
+    height: 20vh;
 }
 
 .svgfooter {
     width:100%;
-    height:50%;
+    height: 50%;
     float: top;
     display: flex;
     justify-content: space-evenly;
@@ -14,10 +15,28 @@
 
 .mailfooter {
     width:100%;
-    height:50%;
+    height: 10%;
+}
+
+.mail {
     display: flex;
     justify-content: center;
-    align-items:center;
+    text-transform: uppercase;
+    padding-bottom: 0%;
+}
+
+
+.termfooter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 0.5px black;
+    align-items: center;
+}
+
+.terme {
+    font-size: xx-small;
 }
 
 .icon {
@@ -42,10 +61,6 @@ a svg:hover #youtube {
   -webkit-transition-timing-function: ease-in-out;
 }
 
-.mail {
- text-transform: uppercase;
-}
-
 .mail:hover {
     color: white;
     transition: 200ms;
@@ -53,4 +68,3 @@ a svg:hover #youtube {
     -webkit-transition: 200ms;
     -webkit-transition-timing-function: ease-in-out;
 }
-
