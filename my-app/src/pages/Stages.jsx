@@ -12,19 +12,19 @@ const Stages = () => {
             <div className='stageintroduce'>
                 <div className='stagepresentation'>
                     <div className='blueline'>
-                        <p className='stagetitle'>STAGE 1</p>
+                    <a href="/" className='stagelink'><p className='stagetitle'>STAGE 1 </p></a>
                     </div>
                 </div>
 
                 <div className='stagepresentation'>
                     <div className='blueline'>
-                        <p className='stagetitle'>STAGE 2</p>
+                    <a href="/" className='stagelink'><p className='stagetitle'>STAGE 2 </p></a>
                     </div>
                 </div>
 
                 <div className='stagepresentation'>
                     <div className='blueline'>
-                        <p className='stagetitle'>STAGE 3</p>
+                    <a href="/" className='stagelink'><p className='stagetitle'>STAGE 3 </p></a>
                     </div>
                 </div>
 
