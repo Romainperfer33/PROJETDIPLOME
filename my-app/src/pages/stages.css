@@ -1,0 +1,77 @@
+@font-face {
+    font-family:"Poppins-Bold" ;
+    src: url(../../public/assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+
+.stagepage {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.stagenavtitle {
+    font-family: "Poppins-Bold",Arial, Helvetica, sans-serif;
+}
+
+.stagepagetitle {
+    color: white;
+    margin: 0;
+    font-size: 10vh;
+}
+
+.stageintroduce {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3vh;
+    
+}
+
+.stagepresentation {
+    width: 50vh;
+    height: 70vh;
+    font-size: 2rem;
+    border: solid blue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: "Poppins-Bold", Arial, Helvetica, sans-serif;
+}
+
+/* .blueline {
+    background-color: blue;
+} */
+
+.stagetitle {
+    color: white;
+}
+
+@media screen and (max-width: 1110px) {
+    .stagepagetitle {
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 10vh;
+    }
+
+    .stageintroduce {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10vh;
+        
+    }
+
+    .stagepresentation {
+        width: 30vh;
+        height: 30vh;
+        border: solid blue;
+    }
+
+}
+    
