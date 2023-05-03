@@ -125,8 +125,8 @@ h2 {
 }
 
 .burger-bar.clicked:nth-child(2){
-    transform: scale(0.1);
-    transition: ease-out 0.5s;
+    transform: scale(0.0);
+    transition: ease-in-out;
 }
 
 .burger-bar.clicked:nth-child(3){

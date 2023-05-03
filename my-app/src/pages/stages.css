@@ -3,16 +3,17 @@
     src: url(../../public/assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
-
+/* -------------- principale page ---------------------- */
 .stagepage {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background: linear-gradient(#0c0c0c,#424141ee );
 }
 
+/* ------------------ Css titre en bar menu ---------------- */
 .stagenavtitle {
     font-family: "Poppins-Bold",Arial, Helvetica, sans-serif;
 }
@@ -29,11 +30,13 @@
     gap: 10vh; 
 }
 
+/* ------------------------- Css des div stages ------------ */
 .stagepresentation {
     width: 50vh;
     height: 70vh;
     font-size: 2rem;
-    border: solid blue;
+    border: solid blue 0.5px;
+    border-radius: 10px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -42,6 +45,15 @@
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.stagepresentation:hover {
+    box-shadow: 0 0 11px rgba(140, 141, 213, 0.826);
+    transform: scale(1.05);
 }
 
 .stagetitle {
@@ -50,12 +62,17 @@
 
 .stagetitle:hover {
     color: blue;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
 }
 
 .stagelink {
     text-decoration: none;
 }
 
+/* ----------------------- responsive media query ---------- */
 @media screen and (max-width: 1110px) {
     .stagepagetitle {
         display: flex;
