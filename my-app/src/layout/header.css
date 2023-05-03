@@ -139,3 +139,19 @@ h2 {
     transform: rotate(0) translate(0);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
+
+/* ---------------------------- responsive -------------------------- */
+
+@media screen and (max-width: 500px) {
+    .centered {
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins-Bold",Arial, Helvetica, sans-serif;
+        font-size: 5rem;
+        color: white;
+        position: relative; 
+      }
+
+}
