@@ -26,8 +26,7 @@
 .stageintroduce {
     display: flex;
     justify-content: space-evenly;
-    gap: 3vh;
-    
+    gap: 10vh; 
 }
 
 .stagepresentation {
@@ -39,11 +38,11 @@
     align-items: flex-end;
     justify-content: center;
     font-family: "Poppins-Bold", Arial, Helvetica, sans-serif;
+    background-image: url(../../public/assets/img/night-g9161762f3_640.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-/* .blueline {
-    background-color: blue;
-} */
 
 .stagetitle {
     color: white;
