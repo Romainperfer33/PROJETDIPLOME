@@ -1,5 +1,7 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import './header.css'
+
 
 const Header = () => {
 
@@ -42,7 +44,7 @@ const Header = () => {
                            <a href="/" className="link">STAGE</a>
                         </li>
                         <li className="navlink">
-                            <a href="/" className="link">LOGIN</a>
+                            <Link to="/loging" className="link">LOGING</Link>
                         </li>
                     </ul>
                 </nav>
