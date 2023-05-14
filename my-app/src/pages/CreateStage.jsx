@@ -2,19 +2,10 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 const CreateStage = () => {
-  const navigate = useNavigate();
-  // si l'utilisateur n'est pas connecté
-  // donc qu'il n'a pas de jwt dans le localStorage
-  // on le redirige vers la page de connexion
-
-  useEffect(() => {
-    if (!localStorage.getItem("jwt")) {
-      navigate("/login");
-    }
-  }, [navigate]);
   // je créé un event listener quand le formulaire est validé
   const handleSubmit = (event) => {
     // j'utilise l'objet event, fourni automatiquement par le navigateur
+
     // pour empêcher que la page soit rechargée (comportement par défaut)
     event.preventDefault();
 
@@ -86,12 +77,12 @@ const CreateStage = () => {
 
         <div>
           <label htmlFor="image">Image</label>
-          <input type="text" name="image" />
+          <input type="text" name="image" alt=""/>
         </div>
 
         <div>
           <label htmlFor="dateDebut">Date de Debut</label>
-          <input type="time" name="date_debut"  alt=""/>
+          <input type="date" name="date_debut"  />
         </div>
 
         <button type="submit">Créer le stage</button>

@@ -1,55 +1,15 @@
 import "./loging.css"
 import { useNavigate } from "react-router-dom";
 
-
-// const LoginForm = () => {
-//     const handleSubmit = (event) => {
-//         event.preventDefault();
-
-//         console.log("here", event.target.username.value);
-
-//         const username = event.target.username.value;
-//         const password = event.target.password.value;
-
-//         fetch("http://localhost:3000/api/users/login", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       // j'envoie dans le corps de la requête POST
-//       // les données du formulaire
-//       // formattées en JSON
-//       body: JSON.stringify({
-//         username: username,
-//         password: password,
-//       }),
-//     })
-   
-//       // le serveur express me renvoie un JWT
-//       // si les infos sont valides (username et password
-//       // correspondent à un utilisateur en BDD)
-//       .then((responseJson) => {
-//         return responseJson.json();
-//       })
-//       // je stocke le JWT dans le localStorage
-//       // pour pouvoir l'utiliser dans toutes les requêtes
-//       // vers mon API qui nécessitent une authenfication
-//       .then((responseJs) => {
-//         const jwt = responseJs.token;
-
-//         localStorage.setItem("jwt", jwt);
-//       });
-//   };
-
-
 const LoginForm = () => {
   const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
-    const username = event.target.username.value;
+ 
+    const username = event.target.username.value; // valeur ciblé dans le form 
     const password = event.target.password.value;
 
-    fetch("http://localhost:3000/api/users/login", {
+    fetch("http://localhost:3000/api/users/login", { // appel fetch pour l'auth dans l'api
       method: "POST",
       headers: {
         "Content-Type": "application/json",
