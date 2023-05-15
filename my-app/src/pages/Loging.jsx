@@ -34,7 +34,7 @@ const LoginForm = () => {
         const userRole = localStorage.getItem("userRole");
 
         if (userRole === "admin") { // Vérification du rôle d'utilisateur avant de rediriger vers le composant restreint
-          navigate("/admin/create-stage");
+          navigate("/stages");
         } else {
           navigate("/stages");
         }
