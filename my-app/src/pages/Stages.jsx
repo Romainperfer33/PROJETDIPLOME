@@ -61,6 +61,9 @@ const Stages = () => {
               {userRole === "admin" && (
                 <Link to="/admin/create-stage" className='create-stage-button'>Créer un stage</Link>
               )}
+              {userRole === "admin" && (
+                <Link to="/admin/update-stage" className='update-stage-button'>Modifier un stage</Link>
+              )}
             </div>
           );
         })}
