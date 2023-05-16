@@ -35,6 +35,9 @@ const Stages = () => {
       });
   };
 
+  
+
+
   return (
     <div className='stagepage'>
       <div className='stagenavtitle'>
@@ -62,7 +65,10 @@ const Stages = () => {
                 <Link to="/admin/create-stage" className='create-stage-button'>Créer un stage</Link>
               )}
               {userRole === "admin" && (
-                <Link to="/admin/update-stage" className='update-stage-button'>Modifier un stage</Link>
+                  <Link to={{
+                    pathname: `/admin/update-stage/${stage.id}`
+                  }}
+                  className='create-stage-button'>Update un stage</Link> 
               )}
             </div>
           );

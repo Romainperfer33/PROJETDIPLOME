@@ -4,7 +4,8 @@ import Stages from './pages/Stages'
 import Loging from './pages/Loging'
 import CreateStage from './pages/CreateStage';
 import UpdateStage from './pages/UpdateStage';
-import './App.css'
+import './App.css';
+
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
   
       {/* --------------ROUTE ADMIN-------------------- */}
       <Route path="/admin/create-stage" element={<CreateStage />} />
-      <Route path="/admin/update-stage" element={<UpdateStage />} />
+      <Route path="/admin/update-stage/:id" element={<UpdateStage />} />
     </Routes>
 </BrowserRouter>
 </div>

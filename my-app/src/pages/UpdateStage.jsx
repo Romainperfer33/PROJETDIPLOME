@@ -5,9 +5,11 @@ import { useParams } from "react-router-dom";
 const UpdateStage = () => {
   // je créé un state pour stocker un coworking
   const [stage, setStage] = useState(null);
+ 
 
   // je récupère l'id présent dans l'url
   const { id } = useParams();
+ 
 
   // j'utilise useEffect, pour executer l'appel à l'api
   // une seule fois, au chargement du composant
@@ -45,7 +47,7 @@ const UpdateStage = () => {
     // donc on utilise JSON.stringify
     // il faut que les donnnées envoyées correspondent
     // à ce qui est attendu par l'API
-    fetch(`http://localhost:3000/api/coworkings/${id}`, {
+    fetch(`http://localhost:3000/api/stages/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -77,34 +79,34 @@ const UpdateStage = () => {
     <>
       {stage ? (
         <>
-          <h1>Mise à jour du stage : {stage.name}</h1>
+          <h1>Mise à jour du stage : {stage.intitule}</h1>
           <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Intitule</label>
-          <input type="text" name="intitule" />
+          <input type="text" name="intitule" defaultValue={stage.intitule}/>
         </div>
         <div>
           <label htmlFor="superficy">Descriptif</label>
-          <input type="text" name="descriptif" />
+          <input type="text" name="descriptif"  defaultValue={stage.descriptif}/>
         </div>
         <div>
           <label htmlFor="capacity">Places</label>
-          <input type="number" name="places" />
+          <input type="number" name="places" defaultValue={stage.places} />
         </div>
 
         <div>
           <label htmlFor="priceDay">Prix</label>
-          <input type="number" name="prix" />
+          <input type="number" name="prix" defaultValue={stage.prix}/>
         </div>
 
         <div>
           <label htmlFor="image">Image</label>
-          <input type="text" name="image" alt=""/>
+          <input type="text" name="image" alt="" defaultValue={stage.image}/>
         </div>
 
         <div>
           <label htmlFor="dateDebut">Date de Debut</label>
-          <input type="date" name="date_debut"  />
+          <input type="date" name="date_debut" defaultValue={stage.date_debut.split("T")[0]}/>
         </div>
 
         <button type="submit">Mettre à jour le coworking</button>
