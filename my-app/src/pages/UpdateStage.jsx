@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import './updateStage.css'
 
 
 const UpdateStage = () => {
@@ -76,18 +77,18 @@ const UpdateStage = () => {
   };
 
   return (
-    <>
+    <div className="cover">
       {stage ? (
-        <>
-          <h1>Mise à jour du stage : {stage.intitule}</h1>
+        <div className="updatemock">
+          <h1 className="logintitle">Mise à jour du stage : <br></br> {stage.intitule}</h1>
           <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Intitule</label>
-          <input type="text" name="intitule" defaultValue={stage.intitule}/>
+          <input type="text" name="intitule"defaultValue={stage.intitule}/>
         </div>
         <div>
-          <label htmlFor="superficy">Descriptif</label>
-          <input type="text" name="descriptif"  defaultValue={stage.descriptif}/>
+          <label htmlFor="descriptif">Descriptif</label>
+          <textarea type="text" name="descriptif"  defaultValue={stage.descriptif}/>
         </div>
         <div>
           <label htmlFor="capacity">Places</label>
@@ -106,16 +107,16 @@ const UpdateStage = () => {
 
         <div>
           <label htmlFor="dateDebut">Date de Debut</label>
-          <input type="date" name="date_debut" defaultValue={stage.date_debut.split("T")[0]}/>
+          <input type="date" name="date_debut" defaultValue={stage.date_debut.split("T")[0]} />
         </div>
 
-        <button type="submit">Mettre à jour le coworking</button>
+        <button type="submit" className="btnupdate">Mettre à jour le coworking</button>
         </form>
-        </>
+        </div>
       ) : (
         <p>Chargement...</p>
       )}
-    </>
+    </div>
   );
 };
 

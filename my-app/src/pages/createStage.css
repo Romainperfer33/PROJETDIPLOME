@@ -1,0 +1,54 @@
+.createmock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid black 0.5px;
+    background: linear-gradient(#6c6e709e, #3d3d3ed0);
+    height: 50vh;
+    width: 40vh;
+    border-radius: 10px;
+    padding:0 50px;   
+}
+
+.createmock:hover {
+    box-shadow: 0 0 11px rgba(140, 141, 213, 0.826);
+}
+
+.createmock input{
+    background: transparent;
+    border: none;
+    border-bottom:solid 1px black;
+    padding:5px;
+    font-size:1.3rem;
+    color:black;
+    font-family: "Poppins-Thin",Arial, Helvetica, sans-serif;
+}
+
+.createmock ::placeholder{
+    font-size:1.3rem;
+    color:black;
+    font-family: "Poppins-Thin",Arial, Helvetica, sans-serif;
+}
+
+.btncreate{
+    width: 300px;
+    margin-top: 20px;
+    padding: 5px;
+    border: none;
+    background: linear-gradient( #e8e8efd0, #9a9b9dcf);
+    border-radius: 10px;
+    font-family: "Poppins-Thin",Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.btncreate:hover {
+    color: white;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+    
+    
+}

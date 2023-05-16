@@ -34,7 +34,7 @@
 .stagepresentation {
     width: 50vh;
     height: 70vh;
-    font-size: 2rem;
+    font-size: 1rem;
     border: solid blue 0.5px;
     border-radius: 10px;
     display: flex;
@@ -58,6 +58,7 @@
 
 .stagetitle {
     color: white;
+    cursor: pointer;
 }
 
 .stagetitle:hover {
@@ -68,8 +69,9 @@
     -webkit-transition-timing-function: ease-in-out;
 }
 
-.stagelink {
-    text-decoration: none;
+.idstage {
+    font-size: 0.8rem;
+    color: white;
 }
 
 /* ----------------------- responsive media query ---------- */
@@ -95,6 +97,7 @@
         width: 30vh;
         height: 30vh;
         border: solid blue;
+        font-size: 0.5rem;
     }
 
 }

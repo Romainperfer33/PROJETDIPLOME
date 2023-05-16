@@ -1,6 +1,4 @@
-
-
-
+import './createStage.css'
 const CreateStage = () => {
   // je créé un event listener quand le formulaire est validé
   const handleSubmit = (event) => {
@@ -55,8 +53,8 @@ const CreateStage = () => {
   };
 
   return (
-<>
-      <form onSubmit={handleSubmit}>
+<div className="cover">
+      <form onSubmit={handleSubmit} className='createmock'>
         <div>
           <label htmlFor="name">Intitule</label>
           <input type="text" name="intitule" />
@@ -87,7 +85,7 @@ const CreateStage = () => {
 
         <button type="submit">Créer le stage</button>
       </form>
-</>
+</div>
   );
 };
 

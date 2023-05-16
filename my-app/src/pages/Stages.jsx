@@ -53,28 +53,28 @@ const Stages = () => {
                 <div className='blueline'>
                   <h2 className='stagetitle'>{stage.intitule}</h2>
                   {userRole === "admin" && (
-                    <h2 className='stagelink'>Identifiant : {stage.id}</h2>
+                    <h3 className='idstage'>Identifiant : {stage.id}</h3>
                   )}
-                </div>
+                  </div>
               </div>
-
+              
               {userRole === "admin" && (
-                <button onClick={() => handleDeleteClick(stage)}>Supprimer le stage</button>
+                <button onClick={() => handleDeleteClick(stage)} className='delete-stage'>Supprimer le stage</button>
               )}
               {userRole === "admin" && (
-                <Link to="/admin/create-stage" className='create-stage-button'>Créer un stage</Link>
+                <Link to="/admin/create-stage" className='create-stage'>Créer un stage</Link>
               )}
               {userRole === "admin" && (
                   <Link to={{
                     pathname: `/admin/update-stage/${stage.id}`
                   }}
-                  className='create-stage-button'>Update un stage</Link> 
+                  className='update-stage'>Update un stage</Link> 
               )}
             </div>
           );
         })}
+        </div>
       </div>
-    </div>
   );
 }
 
