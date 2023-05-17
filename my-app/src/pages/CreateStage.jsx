@@ -83,7 +83,7 @@ const CreateStage = () => {
           <input type="date" name="date_debut"  />
         </div>
 
-        <button type="submit">Créer le stage</button>
+        <button type="submit" className='btncreate'>Créer le stage</button>
       </form>
 </div>
   );

@@ -88,7 +88,7 @@ const UpdateStage = () => {
         </div>
         <div>
           <label htmlFor="descriptif">Descriptif</label>
-          <textarea type="text" name="descriptif"  defaultValue={stage.descriptif}/>
+          <textarea type="text" name="descriptif" className="descriptiftext" defaultValue={stage.descriptif}/>
         </div>
         <div>
           <label htmlFor="capacity">Places</label>
