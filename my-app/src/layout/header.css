@@ -32,13 +32,7 @@
     background: rgb(22,22,22);
     background: linear-gradient(142deg, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 100%);
     }
-  .img {
-    /* background-image: url(../../public/assets/img/DSC_0291.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-  }
+
 h2 {
     color: white;
     display: flex;

@@ -1,6 +1,10 @@
+
 import './createStage.css'
+import { useNavigate } from "react-router-dom";
+
 const CreateStage = () => {
   // je créé un event listener quand le formulaire est validé
+  const navigate = useNavigate();
   const handleSubmit = (event) => {
     // j'utilise l'objet event, fourni automatiquement par le navigateur
 
@@ -43,7 +47,7 @@ const CreateStage = () => {
       // alors on affiche un message dans la console
     }).then((response) => {
       if (response.status === 200) {
-        console.log("stage créé");
+        navigate("/stages");
         // sinon on affiche un message d'erreur
         // car cela veut dire que le stage n'a pas été créé
       } else {
