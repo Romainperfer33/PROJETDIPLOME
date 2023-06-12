@@ -44,7 +44,7 @@ const Header = () => {
                             <Link to="/stages" className="link">STAGE</Link>
                         </li>
                         <li className="navlink">
-                            <Link to="/loging" className="link">LOGING</Link>
+                            <Link to="/loging" className="link">LOGIN</Link>
                         </li>
                         <li className="navlink">
                             <Link to="/inscription" className="link">INSCRIPTION</Link>

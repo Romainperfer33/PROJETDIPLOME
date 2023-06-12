@@ -51,6 +51,7 @@
     transition-timing-function: ease-in-out;
     -webkit-transition: 200ms;
     -webkit-transition-timing-function: ease-in-out;
+    min-width:300px;
 }
 
 .stagepresentation:hover {

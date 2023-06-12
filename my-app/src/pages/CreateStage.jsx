@@ -1,8 +1,12 @@
 
 import './createStage.css'
 import { useNavigate } from "react-router-dom";
+import React, {useState} from "react";
 
 const CreateStage = () => {
+
+  const [error_class, setErrorClass] = useState("hidden")
+  const [isError, setIsError] = useState(false)
   // je créé un event listener quand le formulaire est validé
   const navigate = useNavigate();
   const handleSubmit = (event) => {
@@ -20,6 +24,8 @@ const CreateStage = () => {
     const prix = event.target.prix.value;
     const image = event.target.image.value;
     const date_debut = event.target.date_debut.value;
+
+   
 
     // on fait un appel vers l'API (express)
     // on lui spécifie la méthode POST (pour créer)
@@ -47,11 +53,14 @@ const CreateStage = () => {
       // alors on affiche un message dans la console
     }).then((response) => {
       if (response.status === 200) {
+        setIsError(false)
+        setErrorClass('hidden')
         navigate("/stages");
         // sinon on affiche un message d'erreur
         // car cela veut dire que le stage n'a pas été créé
       } else {
-        console.log("erreur");
+        setIsError(true)
+        setErrorClass('error')
       }
     });
   };
@@ -89,6 +98,7 @@ const CreateStage = () => {
 
         <button type="submit" className='btncreate'>Créer le stage</button>
       </form>
+        <p className={error_class}>Une erreur est survenue</p>
 </div>
   );
 };

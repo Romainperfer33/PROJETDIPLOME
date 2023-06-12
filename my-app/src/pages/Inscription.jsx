@@ -1,7 +1,6 @@
 
-import './createStage.css'
+import './inscription.css'
 import { useNavigate } from "react-router-dom";
-
 const Inscription = () => {
   // je créé un event listener quand le formulaire est validé
   const navigate = useNavigate();
@@ -56,9 +55,8 @@ const Inscription = () => {
                 <input className="userinscription" type="text" placeholder="username" name="username" />
                 <input type="password" placeholder="password" name="password" />
 
-                <div className="inscription-btn" >
                     <button className="btnloging">ENTER</button>
-                </div>
+             
             </div>
         </div>
     </form>

@@ -52,3 +52,18 @@
     
     
 }
+
+.hidden{
+    display:none;
+}
+
+.error{
+    display: block;
+    color:red;
+    width:100%;
+    text-align: center;
+}
+
+.cover{
+    flex-wrap:wrap;
+}

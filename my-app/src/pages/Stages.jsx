@@ -11,6 +11,8 @@ const Stages = () => {
   const [stageData, setStageData] = useState([]);
   const navigate = useNavigate();
 
+  let iserror = false;
+
   useEffect(() => {
     fetch("http://localhost:3000/api/stages")
       .then((stageDataJson) => stageDataJson.json())
@@ -32,7 +34,8 @@ const Stages = () => {
         navigate(0);
       })
       .catch((error) => {
-        console.log(error);
+        iserror = true;
+        error = "Une erreur est survenue"
       });
   };
 
@@ -71,6 +74,8 @@ const Stages = () => {
               {userRole === "admin" && (
                 <button onClick={() => handleDeleteClick(stage)} className='delete-stage'>Supprimer le stage</button>
               )}
+
+          
             </div>
           );
         })}
