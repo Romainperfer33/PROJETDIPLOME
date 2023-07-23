@@ -15,8 +15,6 @@ const CreateStage = () => {
     // pour empêcher que la page soit rechargée (comportement par défaut)
     event.preventDefault();
 
-    // je récupère les valeurs des champs du formulaire
-    // et on les stocke dans des variables
     
     const intitule = event.target.intitule.value;
     const descriptif = event.target.descriptif.value;
@@ -25,15 +23,6 @@ const CreateStage = () => {
     const image = event.target.image.value;
     const date_debut = event.target.date_debut.value;
 
-   
-
-    // on fait un appel vers l'API (express)
-    // on lui spécifie la méthode POST (pour créer)
-    // et on lui passe en "body" les données du formulaire
-    // attention, il faut que les données soient au format JSON
-    // donc on utilise JSON.stringify
-    // il faut que les donnnées envoyées correspondent
-    // à ce qui est attendu par l'API
     fetch("http://localhost:3000/api/stages", {
       method: "POST",
       headers: {

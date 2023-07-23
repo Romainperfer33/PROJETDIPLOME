@@ -50,6 +50,10 @@ padding:0 50px;
     font-family: "Poppins-Thin",Arial, Helvetica, sans-serif;
 }
 
+.logingmock .error {
+    color: red;
+  }
+
 /* ---------------------------------------------- Gestion des styles ------------------------------------------------------- */
 .logintitle {
     margin-top: 0;

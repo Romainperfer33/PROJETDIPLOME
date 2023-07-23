@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Stages from './pages/Stages'
-import Loging from './pages/Loging'
+import Login from './pages/Login'
 import CreateStage from './pages/CreateStage';
 import UpdateStage from './pages/UpdateStage';
 import Inscription from './pages/Inscription';
@@ -16,7 +16,7 @@ function App() {
       {/* -------------ROUTE UTILISATEUR--------------- */}
       <Route path='/' element={<Home />} />
       <Route path='/stages' element={<Stages />} />
-      <Route path="/loging" element={<Loging />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/inscription" element={<Inscription />} />
   
       {/* --------------ROUTE ADMIN-------------------- */}

@@ -1,48 +1,6 @@
 @font-face {
-    font-family: "Poppins-Bold";
-    src: url(../../public/assets/fonts/Poppins/Poppins-Bold.ttf);
-}
-.logo {
-    font-size: x-large;
-    font-weight: bolder;
-    color: white;
-}
-
-.centered span{
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-    
-}
-
-.centered {
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins-Bold",Arial, Helvetica, sans-serif;
-    font-size: 10rem;
-    color: white;
-    position: relative; 
-  }
-  .centered h1::first-letter{
-    letter-spacing: 5rem;
-  }
-#root{
-    background: rgb(22,22,22);
-    background: linear-gradient(142deg, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 100%);
-    }
-
-h2 {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.img {
-    width:100%;
-    height:75vh;
+    font-family: "Poppins-ExtraLight";
+    src: url(../../public/assets/fonts/Poppins/Poppins-ExtraLight.ttf);
 }
 /* ---------------- Navbar and burger menu ------------------ */
 nav {
@@ -70,7 +28,7 @@ nav {
 }
 
 .menu {
-    width: 15vh;
+    width: 20vh;
     height: 100vh;
     background-color:rgb(105, 105, 105);
     position: absolute;
@@ -79,14 +37,8 @@ nav {
     z-index: 0;
 }
 
-h2 {
-    font-size: 3em;
-}
-
-.smcontainer {
-    color: white;
-    display: flex;
-    justify-content: center;
+.navbar {
+    font-family: "Poppins-ExtraLight", Arial, Helvetica, sans-serif;
 }
 /* ------------- sliding menu ------------------ */
 .hidden {
@@ -137,20 +89,4 @@ h2 {
 .burger-bar.unclicked {
     transform: rotate(0) translate(0);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-}
-
-/* ---------------------------- responsive -------------------------- */
-
-@media screen and (max-width: 500px) {
-    .centered {
-        height: 100vh; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Poppins-Bold",Arial, Helvetica, sans-serif;
-        font-size: 5rem;
-        color: white;
-        position: relative; 
-      }
-
 }

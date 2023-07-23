@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import './header.css'
+import './nav.css'
 
-
-const Header = () => {
+const Nav = () => {
 
     // to change burger classes
     const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
@@ -23,21 +22,15 @@ const Header = () => {
         }
         setIsMenuClicked(!isMenuClicked)
     }
-
     const auth = localStorage.getItem('userRole')
     const navigate = useNavigate();
     const logout = ()=>{
         localStorage.clear();
-        navigate('/login')
+        navigate('/')
     }
     return(
-        <div className="bgcolor">
-        <div className="img">
+        <div className="nav">
             <nav>
-                <div className="logo">TFA</div>
-                <div class="centered">
-                    <h1>T<span>F</span>A </h1>
-                </div>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class} ></div>
                     <div className={burger_class} ></div>
@@ -54,7 +47,7 @@ const Header = () => {
                             <Link to="/stages" className="link">STAGE</Link>
                         </li>
                         <li className="navlink">
-                           {auth ? <Link onClick={logout} to="/login" className="link">LOGOUT</Link> :
+                           {auth ? <Link onClick={logout} to="/" className="link">LOGOUT</Link> :
                             <Link to="/login" className="link">LOGIN</Link>}
                         </li>
                         <li className="navlink">
@@ -64,12 +57,7 @@ const Header = () => {
                 </nav>
             </div>
             </div>
-            <div>
-                <h2>TECHNO FOR ALL</h2>
-                <p className="smcontainer"> by Romain Mesama</p>
-            </div>
-        </div>
     )
 }
 
-export default Header
+export default Nav

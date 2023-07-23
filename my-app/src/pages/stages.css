@@ -3,6 +3,7 @@
     src: url(../../public/assets/fonts/Poppins/Poppins-Bold.ttf);
 }
 
+
 /* -------------- principale page ---------------------- */
 .stagepage {
     box-sizing: border-box;
@@ -16,6 +17,8 @@
 /* ------------------ Css titre en bar menu ---------------- */
 .stagenavtitle {
     font-family: "Poppins-Bold",Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
 
 .stagepagetitle {
@@ -30,6 +33,7 @@
     gap: 10vh;
     flex-wrap: wrap;
 }
+
 
 /* ------------------------- Css des div stages ------------ */
 .stagepresentation {

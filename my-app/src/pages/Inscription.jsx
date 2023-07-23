@@ -1,28 +1,22 @@
 
 import './inscription.css'
 import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
+
 const Inscription = () => {
   // je créé un event listener quand le formulaire est validé
   const navigate = useNavigate();
+  const [isError, setIsError] = useState(false);
   const handleSubmit = (event) => {
-    // j'utilise l'objet event, fourni automatiquement par le navigateur
 
-    // pour empêcher que la page soit rechargée (comportement par défaut)
     event.preventDefault();
-
-    // je récupère les valeurs des champs du formulaire
-    // et on les stocke dans des variables
-    
     const username = event.target.username.value;
     const password = event.target.password.value;
 
-    // on fait un appel vers l'API (express)
-    // on lui spécifie la méthode POST (pour créer)
-    // et on lui passe en "body" les données du formulaire
-    // attention, il faut que les données soient au format JSON
-    // donc on utilise JSON.stringify
-    // il faut que les donnnées envoyées correspondent
-    // à ce qui est attendu par l'API
+    if (!username || !password) {
+      setIsError(true);
+      return; // Sortir de la fonction si un champ est manquant
+    }
     fetch("http://localhost:3000/api/users/inscription", {
       method: "POST",
       headers: {
@@ -56,11 +50,13 @@ const Inscription = () => {
                 <input type="password" placeholder="password" name="password" />
 
                     <button className="btnloging">ENTER</button>
-             
             </div>
+            {isError && <p className="error">Veuillez remplir tous les champs</p>}
         </div>
     </form>
     )
 }
 
 export default Inscription;
+
+

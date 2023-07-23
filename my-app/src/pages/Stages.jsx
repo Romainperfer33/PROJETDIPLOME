@@ -2,6 +2,7 @@ import './stages.css';
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link} from 'react-router-dom'
+import Nav from '../layout/Nav'
 
 
 
@@ -45,8 +46,11 @@ const Stages = () => {
   return (
     <div className='stagepage'>
       <div className='stagenavtitle'>
+        <div>
         <p className='stagepagetitle'>TFA</p>
         <p className='stagepagetitle'>STAGES</p>
+        </div>
+        <Nav/>
       </div>
 
       <div className='stageintroduce'>
