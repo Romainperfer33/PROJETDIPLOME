@@ -28,7 +28,7 @@ const Header = () => {
     const navigate = useNavigate();
     const logout = ()=>{
         localStorage.clear();
-        navigate('/login')
+        navigate('/')
     }
     return(
         <div className="bgcolor">
@@ -54,12 +54,14 @@ const Header = () => {
                             <Link to="/stages" className="link">STAGE</Link>
                         </li>
                         <li className="navlink">
-                           {auth ? <Link onClick={logout} to="/login" className="link">LOGOUT</Link> :
+                           {auth ? <Link onClick={logout} to="/" className="link">LOGOUT</Link> :
                             <Link to="/login" className="link">LOGIN</Link>}
                         </li>
+                        {!auth && (
                         <li className="navlink">
                             <Link to="/inscription" className="link">INSCRIPTION</Link>
                         </li>
+            )}
                     </ul>
                 </nav>
             </div>

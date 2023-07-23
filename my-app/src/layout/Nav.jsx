@@ -48,11 +48,13 @@ const Nav = () => {
                         </li>
                         <li className="navlink">
                            {auth ? <Link onClick={logout} to="/" className="link">LOGOUT</Link> :
-                            <Link to="/login" className="link">LOGIN</Link>}
+                            <Link to="/login" className="link">LOGIN</Link> }
                         </li>
+                        {!auth && (
                         <li className="navlink">
                             <Link to="/inscription" className="link">INSCRIPTION</Link>
                         </li>
+            )}
                     </ul>
                 </nav>
             </div>
